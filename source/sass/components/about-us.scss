@@ -1,7 +1,12 @@
 .about-us {
   padding: 45px 0 100px;
-  background: url("../img/bg_svg.svg") no-repeat;
-  background-position: right top;
+
+
+
+  &__container {
+    background: url("../img/bg_svg.svg") no-repeat;
+    background-position: right top;
+  }
 
   &__wrap {
     max-width: 1080px;
