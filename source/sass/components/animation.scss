@@ -23,7 +23,6 @@
     @media (max-width: $tablet) {
       display: flex;
       flex-direction: column;
-
     }
   }
 
@@ -34,9 +33,8 @@
     padding-bottom: 60px;
 
     @media (max-width: $tablet) {
-      align-items:center;
+      align-items: center;
       gap: 40px;
-
     }
   }
 
@@ -45,7 +43,7 @@
     align-self: flex-end;
 
     @media (max-width: $tablet) {
-      align-self: center
+      align-self: center;
     }
   }
 
@@ -68,12 +66,7 @@
       font-size: 20px;
     }
   }
-
-
 }
-
-
-
 
 .scene {
 
@@ -84,15 +77,13 @@
 
   @media (max-width: $laptop) {
     width: 350px;
-  height: 350px;
-
-  perspective: 650px;
+    height: 350px;
+    perspective: 650px;
   }
 
   @media (max-width: $tablet) {
     display: none;
   }
-
 }
 
 .wrapper {
@@ -107,7 +98,7 @@
   width: 70%;
   height: 70%;
   margin: 0 auto;
-  transform-style:  preserve-3d;
+  transform-style: preserve-3d;
   animation: rotate 100s infinite linear;
 }
 
@@ -121,8 +112,7 @@
   border: 1px;
   border-style: dotted;
   border-color: $button-color;
-  box-shadow: 1px 0px 20px -2px rgba(0,0,0), 1px 0px 50px -2px $button-color;
-
+  box-shadow: 1px 0 20px -2px rgba(0, 0, 0), 1px 0 50px -2px $button-color;
 }
 
 

@@ -36,34 +36,31 @@
       "aa da ca"
       "ea da fa"
       "ea ga fa"
-      ". ga ." ;
+      ". ga .";
 
-      @media (max-width: $desktop) {
-        grid-template-rows: repeat(6, 190px);
-      }
+    @media (max-width: $desktop) {
+      grid-template-rows: repeat(6, 190px);
+    }
 
-      @media (max-width: $laptop) {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 380px);
-        grid-template-areas:
+    @media (max-width: $laptop) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, 380px);
+      grid-template-areas:
+        "aa ba"
+        "ca da"
+        "ea fa"
+        "ga  .";
+    }
 
-            "aa ba"
-            "ca da"
-            "ea fa"
-            "ga  ." ;
-      }
+    @media (max-width: $tablet) {
+      grid-template-rows: repeat(4, 320px);
+    }
 
-      @media (max-width: $tablet) {
-        grid-template-rows: repeat(4, 320px);
-      }
-
-      @media (max-width: $mobile) {
-        display: flex;
-        flex-direction: column;
-        gap: 30px
-      }
-
-
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
   }
 
   &__item {
@@ -92,10 +89,8 @@
     }
   }
 
-
   &__item:nth-child(1) {
     grid-area: aa;
-
   }
 
   &__item:nth-child(2) {
@@ -125,7 +120,7 @@
   &__desc-wrap {
     border: 1px solid $black;
     background: $white;
-    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
     padding: 198px 36px 36px 26px;
     width: 385px;
     height: 400px;
@@ -195,19 +190,18 @@
     height: 232px;
     border-radius: 2px;
     border: 1px solid $black;
-    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
 
     @media (max-width: $desktop) {
       width: 283px;
       height: 179px;
       left: 50%;
-      transform: translateX(-50%)
+      transform: translateX(-50%);
     }
 
     @media (max-width: $laptop) {
       left: 0;
-      transform: translateX(0%)
-
+      transform: translateX(0%);
     }
 
     @media (max-width: $tablet) {

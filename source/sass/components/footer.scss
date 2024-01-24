@@ -29,9 +29,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
     grid-template-areas:
-    "footer-logo footer-menu footer-button"
-    "copyright footer-menu contacts"
-    "privacy footer-menu social";
+      "footer-logo footer-menu footer-button"
+      "copyright footer-menu contacts"
+      "privacy footer-menu social";
 
     @media (max-width: $tablet) {
       column-gap: 40px;
@@ -39,11 +39,11 @@
       grid-template-columns: 220px 1fr;
       grid-template-rows: repeat(5, auto);
       grid-template-areas:
-      "footer-logo  contacts"
-      "footer-menu  footer-button"
-      "footer-menu  social"
-      "footer-menu  copyright"
-      "footer-menu  privacy";
+        "footer-logo  contacts"
+        "footer-menu  footer-button"
+        "footer-menu  social"
+        "footer-menu  copyright"
+        "footer-menu  privacy";
     }
 
     @media (max-width: $mobile) {
@@ -98,7 +98,6 @@
     flex-direction: column;
     align-self: flex-start;
     justify-self: flex-start;
-
   }
 
   &__button {
@@ -118,7 +117,6 @@
     display: flex;
     align-items: center;
     column-gap: 10px;
-
   }
 
   &__icon {
@@ -143,8 +141,5 @@
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-
   }
-
-
 }

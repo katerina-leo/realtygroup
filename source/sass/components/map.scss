@@ -1,16 +1,15 @@
 .map {
+  overflow: hidden;
+  position: relative;
+  height: 515px;
 
-    overflow: hidden;
-    position: relative;
-    height: 515px;
+  @media (max-width: $laptop) {
+    height: 660px;
+  }
 
-    @media (max-width: $laptop) {
-      height: 660px;
-    }
-
-    @media (max-width: $mobile) {
-      height: 600px;
-    }
+  @media (max-width: $mobile) {
+    height: 600px;
+  }
 
   &__iframe {
     left: 0;
@@ -24,7 +23,5 @@
       height: 50%;
       top: 360px;
     }
-
-   
   }
 }

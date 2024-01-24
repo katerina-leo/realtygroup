@@ -37,7 +37,6 @@
     @media (max-width: $laptop) {
       font-size: 14px;
     }
-
   }
 
   &__input {
@@ -64,17 +63,16 @@
     }
 
     &:focus {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.60);;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     }
 
     &::placeholder {
       font-size: 16px;
-      color: rgba(0, 0, 0, 0.60);
+      color: rgba(0, 0, 0, 0.6);
 
       @media (max-width: $laptop) {
         font-size: 14px;
       }
-
     }
   }
 
@@ -153,7 +151,6 @@
   @media (max-width: $tablet) {
     padding: 10px 20px;
   }
-
 }
 
 .form-check {

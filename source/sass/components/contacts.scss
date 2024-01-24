@@ -1,7 +1,7 @@
 .contacts {
   width: 489px;
   height: 433px;
-  background: rgba(4, 8, 20, 0.80);
+  background: rgba(4, 8, 20, 0.8);
   color: $white;
   padding: 20px 30px;
   font-family: $font-family;
@@ -9,14 +9,14 @@
   font-weight: 500;
   position: absolute;
   z-index: 3;
-  bottom: 0px;
+  bottom: 0;
   left: 30px;
 
 
   @media (max-width: $laptop) {
     height: 360px;
     width: 100%;
-    top: 0px;
+    top: 0;
     left: 0;
     font-size: 20px;
   }
@@ -32,10 +32,6 @@
   &__phone {
     display: flex;
     flex-direction: column;
-    padding-bottom: 25px;
-  }
-
-  &__address {
     padding-bottom: 25px;
   }
 
@@ -62,9 +58,9 @@
 
 .contacts h3 {
   font-family: $second-font;
-font-size: 28px;
-font-weight: 600;
-padding-bottom: 50px;
+  font-size: 28px;
+  font-weight: 600;
+  padding-bottom: 50px;
 
   @media (max-width: $laptop) {
     font-size: 24px;

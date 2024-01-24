@@ -30,36 +30,31 @@
     background-image: url("../img/image-mobile.jpg");
     height: 250px;
   }
-
-
 }
 
 .image div {
-color: $black;
-font-family: $font-family;
-font-size: 60px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-text-transform: uppercase;
+  color: $black;
+  font-family: $font-family;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
 
-@media (max-width: $desktop) {
-  font-size: 52px;
+  @media (max-width: $desktop) {
+    font-size: 52px;
+  }
+
+  @media (max-width: $laptop) {
+    font-size: 46px;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 32px;
+    color: $white;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 22px;
+  }
 }
-
-@media (max-width: $laptop) {
-  font-size: 46px;
-}
-
-@media (max-width: $tablet) {
-  font-size: 32px;
-  color: $white;
-}
-
-@media (max-width: $mobile) {
-  font-size: 22px;
-
-}
-}
-
-

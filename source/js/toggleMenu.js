@@ -24,5 +24,3 @@ export const toggleMenu = () => {
     navigation.classList.toggle('main-nav__opened--active');
   })
   }
-
-
