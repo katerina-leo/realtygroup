@@ -1,0 +1,218 @@
+.services {
+  padding: 90px 0 100px;
+  background: url("../img/servicies_bg.jpg") no-repeat;
+  background-size: cover;
+  height: 2000px;
+  object-fit: cover;
+
+  @media (max-width: $desktop) {
+    background-image: url("../img/servicies_bg-desktop.jpg");
+    height: 1600px;
+  }
+
+  @media (max-width: $laptop) {
+    background-image: url("../img/servicies_bg-laptop.jpg");
+    height: 1900px;
+  }
+
+  @media (max-width: $tablet) {
+    background-image: url("../img/servicies_bg-tablet.jpg");
+    height: 1650px;
+  }
+
+  @media (max-width: $mobile) {
+    background-image: url("../img/servicies_bg-mobile.jpg");
+    height: 2650px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 240px);
+    gap: 50px;
+    grid-template-areas:
+      ". ba ."
+      "aa ba ca"
+      "aa da ca"
+      "ea da fa"
+      "ea ga fa"
+      ". ga ." ;
+
+      @media (max-width: $desktop) {
+        grid-template-rows: repeat(6, 190px);
+      }
+
+      @media (max-width: $laptop) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 380px);
+        grid-template-areas:
+
+            "aa ba"
+            "ca da"
+            "ea fa"
+            "ga  ." ;
+      }
+
+      @media (max-width: $tablet) {
+        grid-template-rows: repeat(4, 320px);
+      }
+
+      @media (max-width: $mobile) {
+        display: flex;
+        flex-direction: column;
+        gap: 30px
+      }
+
+
+  }
+
+  &__item {
+    width: 100%;
+    position: relative;
+    height: 480px;
+
+    @media (max-width: $desktop) {
+      height: 380px;
+    }
+
+    @media (max-width: $laptop) {
+      max-width: 339px;
+      justify-self: center;
+    }
+
+    @media (max-width: $tablet) {
+      max-width: 250px;
+      height: 320px;
+    }
+
+    @media (max-width: $mobile) {
+      align-self: center;
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+
+
+  &__item:nth-child(1) {
+    grid-area: aa;
+
+  }
+
+  &__item:nth-child(2) {
+    grid-area: ba;
+  }
+
+  &__item:nth-child(3) {
+    grid-area: ca;
+  }
+
+  &__item:nth-child(4) {
+    grid-area: da;
+  }
+
+  &__item:nth-child(5) {
+    grid-area: ea;
+  }
+
+  &__item:nth-child(6) {
+    grid-area: fa;
+  }
+
+  &__item:nth-child(7) {
+    grid-area: ga;
+  }
+
+  &__desc-wrap {
+    border: 1px solid $black;
+    background: $white;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 198px 36px 36px 26px;
+    width: 385px;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: $desktop) {
+      width: 307px;
+      height: 303px;
+      padding: 140px 20px 20px 20px;
+    }
+
+    @media (max-width: $tablet) {
+      width: 250px;
+      height: 250px;
+      padding: 80px 20px 20px 20px;
+    }
+
+    @media (max-width: $mobile) {
+      padding-top: 100px;
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+
+  &__desc-wrap p {
+    font-size: 24px;
+    text-transform: uppercase;
+
+    @media (max-width: $desktop) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 16px;
+    }
+  }
+
+  &__desc-wrap button {
+    font-size: 18px;
+    width: 100%;
+
+    @media (max-width: $desktop) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $mobile) {
+      align-self: flex-start;
+      width: 200px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    width: 349px;
+    height: 232px;
+    border-radius: 2px;
+    border: 1px solid $black;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+
+    @media (max-width: $desktop) {
+      width: 283px;
+      height: 179px;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+
+    @media (max-width: $laptop) {
+      left: 0;
+      transform: translateX(0%)
+
+    }
+
+    @media (max-width: $tablet) {
+      width: 200px;
+      height: 140px;
+    }
+  }
+}

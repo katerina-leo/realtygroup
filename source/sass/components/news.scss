@@ -1,0 +1,46 @@
+.news {
+  padding: 90px 0 100px;
+  background: url("../img/news_bg.jpg") no-repeat;
+  background-size: cover;
+  height: 1000px;
+  object-fit: cover;
+
+  @media (max-width: $desktop) {
+    padding: 70px 0 50px;
+    height: 850px;
+    background-image: url("../img/news_bg-desktop.jpg");
+  }
+
+  @media (max-width: $laptop) {
+    background-image: url("../img/news_bg-laptop.jpg");
+    height: 900px;
+
+  }
+
+  @media (max-width: $tablet) {
+    height: 930px;
+    background-image: url("../img/news_bg-tablet.jpg");
+  }
+
+  @media (max-width: $mobile) {
+    height: 900px;
+    background-image: url("../img/news_bg-mobile.jpg");
+  }
+
+  &__desc {
+    text-align: center;
+    font-family: $second-font;
+    font-size: 32px;
+    font-weight: 600;
+    max-width: 850px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+
+    @media (max-width: $desktop) {
+      font-size: 22px;
+    }
+
+
+
+  }
+}

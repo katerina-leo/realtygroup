@@ -1,0 +1,147 @@
+html {
+  --container: 300px;
+  --padding-container: 10px;
+  overflow-x: hidden;
+  position: relative;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: $font-family, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  color: $font-color;
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
+iframe {
+  border: none;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+}
+
+
+
+//modal
+.success,
+.error {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.success__message,
+.error__message {
+  position: relative;
+  color: $white;
+  font-size: 30px;
+  line-height: 150%;
+  font-weight: 700;
+
+  &--cross {
+    padding-top: 300px;
+
+    @media (min-width: $tablet) {
+      padding-top: 300px;
+    }
+  }
+}
+
+.success__message--cross::before,
+.error__message--cross::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: url("../img/icon-cross-white.svg") center no-repeat;
+  width: 25px;
+  height: 25px;
+
+  @media (min-width: $tablet) {
+    top: 15px;
+    right: 15px;
+  }
+}
+
+
+.error__button {
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  box-sizing: content-box;
+  color: $white;
+  border: 4px solid #ff5635;
+  background-color: #ff5635;
+  border-radius: 8px;
+}
+
+.error__button:hover,
+.error__button:focus {
+  opacity: 0.8;
+}
+
+.error__button:focus {
+  outline: none;
+}
+
+.error__button:active {
+  outline: none;
+  opacity: 0.6;
+}

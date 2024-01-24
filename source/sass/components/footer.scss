@@ -1,0 +1,150 @@
+.footer {
+  height: 240px;
+  background-color: $bg-color;
+  color: $white;
+  font-size: 22px;
+  font-family: $font-family;
+  font-weight: 500;
+
+  @media (max-width: $desktop) {
+    font-size: 20px;
+  }
+
+  @media (max-width: $tablet) {
+    height: 350px;
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile) {
+    height: 520px;
+    font-size: 16px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: auto 1fr 270px;
+    grid-template-rows: auto auto auto;
+    column-gap: 50px;
+    row-gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-template-areas:
+    "footer-logo footer-menu footer-button"
+    "copyright footer-menu contacts"
+    "privacy footer-menu social";
+
+    @media (max-width: $tablet) {
+      column-gap: 40px;
+      row-gap: 30px;
+      grid-template-columns: 220px 1fr;
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas:
+      "footer-logo  contacts"
+      "footer-menu  footer-button"
+      "footer-menu  social"
+      "footer-menu  copyright"
+      "footer-menu  privacy";
+    }
+
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__logo {
+    grid-area: footer-logo;
+
+    @media (max-width: $laptop) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__copyright {
+    grid-area: copyright;
+
+    @media (max-width: $laptop) {
+      justify-self: flex-start;
+    }
+
+    @media (max-width: $tablet) {
+      justify-self: flex-end;
+    }
+  }
+
+  &__privacy {
+    grid-area: privacy;
+    font-size: 18px;
+
+    @media (max-width: $laptop) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $tablet) {
+      justify-self: flex-end;
+    }
+
+    @media (max-width: $mobile) {
+
+      font-size: 14px;
+    }
+  }
+
+  &__menu {
+    grid-area: footer-menu;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-self: flex-start;
+
+  }
+
+  &__button {
+    grid-area: footer-button;
+    align-self: center;
+    justify-self: end;
+
+    @media (max-width: $mobile) {
+      align-self: flex-start;
+    }
+  }
+
+  &__contacts {
+    grid-area: contacts;
+    align-self: flex-start;
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+  }
+
+  &__icon {
+    width: 25px;
+    height: 30px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+
+  &__social {
+    grid-area: social;
+    display: flex;
+    gap: 10px;
+    align-self: flex-start;
+    justify-self: flex-end;
+  }
+
+  &__phone-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+  }
+
+
+}

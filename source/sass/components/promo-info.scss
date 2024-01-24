@@ -1,0 +1,129 @@
+.promo-info {
+  max-width: 1230px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  @media (max-width: $desktop) {
+    max-width: 980px;
+  }
+
+  @media (max-width: $laptop) {
+    gap: 20px;
+    max-width: 700px;
+  }
+
+  @media (max-width: $mobile) {
+    gap: 20px;
+    max-width: 360px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 140px;
+    justify-content: flex-start;
+    max-width: 300px;
+
+    @media (max-width: $desktop) {
+      max-width: 250px;
+    }
+
+    @media (max-width: $laptop) {
+      max-width: 180px;
+    }
+
+    @media (max-width: $tablet) {
+      max-width: 150px;
+    }
+
+    @media (max-width: $mobile) {
+      height: 110px;
+      width: 360px;
+      align-self: center;
+    }
+
+
+
+
+
+  }
+
+  &__count {
+    font-size: 50px;
+    font-family: $second-font;
+    font-weight: 600;
+    padding-bottom: 20px;
+
+    @media (max-width: $desktop) {
+      font-size: 46px;
+    }
+
+    @media (max-width: $laptop) {
+      font-size: 36px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 30px;
+    }
+
+    @media (max-width: $mobile) {
+      padding-bottom: 10px;
+    }
+
+
+  }
+
+  &__line {
+
+    width: 300px;
+    height: 2px;
+    background-color: $button-color;
+
+    @media (max-width: $desktop) {
+      width: 250px;
+    }
+
+    @media (max-width: $laptop) {
+      width: 180px;
+    }
+
+    @media (max-width: $tablet) {
+      max-width: 150px;
+    }
+
+    @media (max-width: $mobile) {
+      width: 360px;
+    }
+
+
+
+
+  }
+
+  &__desc {
+    font-size: 20px;
+    font-family: $second-font;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    justify-self: flex-end;
+    padding-top: 15px;
+
+    @media (max-width: $desktop) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $laptop) {
+      font-size: 14px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 12px;
+    }
+  }
+}

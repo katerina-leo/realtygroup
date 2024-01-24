@@ -1,0 +1,27 @@
+@import "variables.scss";
+@import "global.scss";
+@import "fonts.scss";
+@import "visually-hidden.scss";
+
+//components
+
+@import "./components/container.scss";
+@import "./components/button.scss";
+@import "./components/title.scss";
+@import "./components/burger.scss";
+@import "./components/promo.scss";
+@import "./components/header.scss";
+@import "./components/main-nav.scss";
+@import "./components/link-line.scss";
+@import "./components/promo-info.scss";
+@import "./components/about-us.scss";
+@import "./components/animation.scss";
+@import "./components/services.scss";
+@import "./components/image.scss";
+@import "./components/news.scss";
+@import "./components/swiper.scss";
+@import "./components/form-section.scss";
+@import "./components/form.scss";
+@import "./components/map.scss";
+@import "./components/contacts.scss";
+@import "./components/footer.scss";

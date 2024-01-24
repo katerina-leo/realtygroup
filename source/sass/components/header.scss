@@ -1,0 +1,79 @@
+.header {
+  position: fixed;
+  min-height: 95px;
+  width: 100%;
+  background-color: rgba(4, 8, 20, 0.6);
+  z-index: 100;
+
+  &__container {
+    display: grid;
+    grid-template-columns: auto 1fr ;
+    gap: 30px;
+    align-items: center;
+    min-height: 95px;
+    // padding: 10px 0;
+    margin: 0 auto;
+    justify-self: flex-end;
+
+    @media (max-width: $laptop) {
+      grid-template-columns: 1fr auto;
+    }
+
+
+
+
+  }
+
+  &__link {
+    display: none;
+
+    @media (max-width: $laptop) {
+      display: block;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+
+
+    @media (max-width: $desktop) {
+      gap: 30px;
+    }
+
+    @media (max-width: $laptop) {
+      flex-direction: column;
+    }
+  }
+
+  &__phone-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__phone {
+    font-size: 24px;
+    font-weight: 500;
+    color: $white;
+
+    @media (max-width: $desktop) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $laptop) {
+      color: $black;
+    }
+  }
+
+  &__icon {
+    fill: $button-color;
+    display: block;
+
+    @media (max-width: $laptop) {
+      display: none;
+    }
+
+  }
+}

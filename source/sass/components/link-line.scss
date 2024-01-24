@@ -1,0 +1,27 @@
+.link-line {
+  position: relative;
+  transition: color .3s ease-in-out;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: $white;
+      transform: translateX(-50%);
+      transition: 0.4s;
+
+      @media (max-width: $laptop) {
+        background-color: $black;
+      }
+
+    }
+
+    &:hover:after,
+    &:active:after{
+      width: 100%;
+    }
+
+}
