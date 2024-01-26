@@ -1,15 +1,20 @@
 .form-section {
+  padding: 40px 0;
+  height: 550px;
 
-  max-height: 690px;
+  @media (max-width: $laptop) {
+    padding: 30px 0;
+    height: 520px;
+  }
 
   @media (max-width: $tablet) {
-    max-height: 940px;
+    height: 840px;
   }
 
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    column-gap: 50px;
 
     @media (max-width: $desktop) {
       grid-template-columns: 1fr 1fr;

@@ -1,0 +1,41 @@
+.privacy {
+  font-family: $font-family;
+
+  &__promo {
+    height: 300px;
+    color: $white;
+    background-color: $bg-color;
+    font-weight: 500;
+    text-transform: uppercase;
+
+  }
+
+  &__promo h1 {
+    padding-top: 200px;
+    font-weight: 500;
+    font-size: 20px;
+
+    @media (max-width: $tablet) {
+      font-size: 18px;
+    }
+
+
+  }
+
+  &__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__container h2,
+  &__container h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  &__container p {
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+}

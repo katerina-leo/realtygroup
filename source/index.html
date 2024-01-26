@@ -30,9 +30,9 @@
   <script src="https://unpkg.com/imask" defer></script>
   <script type="module" src="js/index.js"></script>
 
-  <title>Агенство недвижимости RealyGroup, покупка, продажа квартир</title>
+  <title>Агенство недвижимости РиэлтGroup, покупка, продажа квартир</title>
   <meta name="description"
-    content="Агенство недвижимости RealyGroup в Чебоксарах, покупка, продажа квартир, одобрение ипотеки, юридические услуги с недвижимость ">
+    content="Агенство недвижимости РиэлтGroup в Чебоксарах, покупка, продажа квартир, одобрение ипотеки, юридические услуги с недвижимость ">
 </head>
 
 <body class="body">
@@ -82,7 +82,7 @@
                 <a class="header__phone link-line" href="tel:+79276683537">+7 (927) 668 35 37</a>
                 <a class="header__phone link-line" href="tel:+78352383537">+7 (8352) 38 35 37</a>
               </ul>
-              <button class="button" type="button">Заказать звонок</button>
+              <button class="header__button button button--request" data-order="Заказать звонок" type="button">Заказать звонок</button>
             </div>
           </div>
         </nav>
@@ -299,10 +299,10 @@
                 </div>
               </li>
               <li class="swiper-slide">
-                <h3>Первый взнос по ипотеке увеличили с 1 января 2024г</h3>
+                <h3>Продажи квартир могут рухнуть на 20% в 2024 году</h3>
                 <div>
                   <p>
-                    К сожалению, первоначальный взнос по госпрограмме хотят увеличить. Уже с начала нового года ожидаем 25-30%, а это значит, что покупка собственной квартиры станет менее доступной.
+                    В 2024 году в России вторичка может подешеветь на 20%, а первичка подорожает.
                   </p>
                 </div>
               </li>
@@ -474,14 +474,15 @@
 
         </ul>
         <p class="footer__copyright">realtygroup21.ru, @2024</p>
-        <a class="footer__privacy link-line" href="">Политика конфиденциальности</a>
+        <a class="footer__privacy link-line" href="privacy.html">Политика конфиденциальности</a>
       </div>
     </footer>
 
-    <!-- <div class="modal modal--request">
+    <div class="modal modal--request">
       <div class="modal__body">
 
-        <h3 class="modal__title">Оформить заявку</h3>
+        <h3 class="modal__title">Заказть звонок</h3>
+        <p></p>
         <form id="form" class="form form--request" novalidate="" method="post">
           <fieldset class="form__fieldset form__fieldset--user">
             <div class="form__wrapper">
@@ -496,11 +497,7 @@
                   required>
 
             </div>
-            <div class="form__wrapper">
-              <label for="validationmail" class="form__label">Адрес электронной почты</label>
-              <input class="form__input form__input--phone" id="validationmail" name="email" type="email">
 
-            </div>
             <div class="form__wrapper">
               <div class="form-check">
                 <input class="form__input form__input--checkbox" type="checkbox" value="" id="invalidCheck" name="agreement" required>
@@ -518,7 +515,7 @@
 
           <div class="form__wrapper-btn">
 
-            <button class="form__submit" type="submit">
+            <button class="form__submit button" type="submit">
               Отправить заявку
             </button>
           </div>
@@ -533,7 +530,7 @@
           </svg>
         </button>
       </div>
-    </div> -->
+    </div>
 
     </div>
           <!-- Сообщение об успешном отправлении -->
@@ -554,9 +551,7 @@
 
       </div>
     </div>
-    <footer class="page-footer">
 
-    </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

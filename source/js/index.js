@@ -2,20 +2,14 @@
 
 import { toggleMenu } from "./toggleMenu.js";
 
-const sphere = document.getElementById('sphere');
-const rows = []
-
-for(let i = 0; i < 180; i += 9) {
-  rows.push(`<div class="line" style="transform: rotateY(${i}deg);"></div>`)
-}
-
-sphere.innerHTML = rows.join("");
-
-
-// import { modalElem, form,request, buttonsRequest } from "./elements.js";
-// import { formSend } from "./formSend.js";
+import { modalElem, form,request, buttonsRequest } from "./elements.js";
+import { formSend } from "./formSend.js";
+import { shereAnimate } from "./shereAnimate.js";
 
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+
+
 
 
 
@@ -59,31 +53,32 @@ const swiper = new Swiper('.swiper', {
 })
 
 
-// const init = () => {
-//   toggleMenu();
+const init = () => {
+  toggleMenu();
+  shereAnimate()
 
-//   buttonsRequest.forEach((buttonRequest) => {
-//     buttonRequest.addEventListener('click', () => {
-//       modalElem.classList.add('modal--open')
-//       request.value = buttonRequest.dataset.order;
-//     }
+  buttonsRequest.forEach((buttonRequest) => {
+    buttonRequest.addEventListener('click', () => {
+      modalElem.classList.add('modal--open')
+      request.value = buttonRequest.dataset.order;
+    }
 
-//     )
-//   })
+    )
+  })
 
-//   modalElem.addEventListener('click', (event) => {
-//     const target = event.target;
+  modalElem.addEventListener('click', (event) => {
+    const target = event.target;
 
-//     if(target.closest('.modal__close')
-//       || target === modalElem || event.code === 'Escape' ||
-//           event.type === 'submit') {
-//       modalElem.classList.remove('modal--open')
-//     }
-//   })
+    if(target.closest('.modal__close')
+      || target === modalElem || event.code === 'Escape' ||
+          event.type === 'submit') {
+      modalElem.classList.remove('modal--open')
+    }
+  })
 
-//   form.addEventListener('submit', formSend);
-// }
+  form.addEventListener('submit', formSend);
+}
 
 
-toggleMenu()
-// init();
+// toggleMenu()
+init();
