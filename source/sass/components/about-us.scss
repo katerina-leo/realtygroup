@@ -1,9 +1,11 @@
 .about-us {
   padding: 70px 0 100px;
+  background: url("../img/bg_svg.svg") no-repeat;
+  background-position: right top cover;
 
   &__container {
-    background: url("../img/bg_svg.svg") no-repeat;
-    background-position: right top;
+    // background: url("../img/bg_svg.svg") no-repeat;
+    // background-position: right top;
   }
 
   &__wrap {
