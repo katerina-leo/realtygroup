@@ -1,5 +1,5 @@
 .promo {
-  background: url("../img/promo_img.jpg") no-repeat center;
+  background: $bg-color url("../img/promo_img.jpg") no-repeat center/cover ;
   object-fit: cover;
   height: 780px;
   color: $white;

@@ -2,7 +2,7 @@
 
 import { toggleMenu } from "./toggleMenu.js";
 
-import { modals, form,request, buttonsRequest, buttonsConsult, modalConsult, modalRequest } from "./elements.js";
+import { modals, form1, form2, form3, request, buttonsRequest, buttonsConsult, modalConsult, modalRequest } from "./elements.js";
 import { formSend } from "./formSend.js";
 import { shereAnimate } from "./shereAnimate.js";
 
@@ -13,11 +13,11 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
 
 
 
-// const phoneInput = document.querySelector(".form__input--phone");
-//     const maskOptions = {
-//       mask: '+{7}(000)000-00-00'
-//     };
-//     const mask = IMask(phoneInput, maskOptions);
+const phoneInput = document.querySelector(".form__input--phone");
+    const maskOptions = {
+      mask: '+{7}(000)000-00-00'
+    };
+    const mask = IMask(phoneInput, maskOptions);
 
 
 const swiper = new Swiper('.swiper', {
@@ -93,7 +93,9 @@ const init = () => {
   //   }
   // })
 
-  form.addEventListener('submit', formSend);
+  form1.addEventListener('submit', formSend);
+  form2.addEventListener('submit', formSend);
+  form3.addEventListener('submit', formSend);
 }
 
 
