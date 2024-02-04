@@ -1,5 +1,5 @@
 
-import { modalBody, modalElem } from "./elements.js";
+import { modalBody, modals } from "./elements.js";
 import { showErrorMessage, showSuccessMessage } from "./util.js";
 
 export const formSend = async (evt) => {
@@ -18,7 +18,7 @@ export const formSend = async (evt) => {
         showSuccessMessage();
         form.reset();
         modalBody.classList.remove('modal__body--sending');
-        modalElem.classList.remove('modal--open');
+        modals.classList.remove('modal--open');
       } else {
         showErrorMessage();
         modalBody.classList.remove('modal__body--sending');

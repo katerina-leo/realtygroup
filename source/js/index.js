@@ -2,7 +2,7 @@
 
 import { toggleMenu } from "./toggleMenu.js";
 
-import { modalElem, form,request, buttonsRequest } from "./elements.js";
+import { modals, form,request, buttonsRequest, buttonsConsult, modalConsult, modalRequest } from "./elements.js";
 import { formSend } from "./formSend.js";
 import { shereAnimate } from "./shereAnimate.js";
 
@@ -59,22 +59,39 @@ const init = () => {
 
   buttonsRequest.forEach((buttonRequest) => {
     buttonRequest.addEventListener('click', () => {
-      modalElem.classList.add('modal--open')
+      modalRequest.classList.add('modal--open')
       request.value = buttonRequest.dataset.order;
-    }
-
-    )
+    })
   })
 
-  modalElem.addEventListener('click', (event) => {
-    const target = event.target;
-
-    if(target.closest('.modal__close')
-      || target === modalElem || event.code === 'Escape' ||
-          event.type === 'submit') {
-      modalElem.classList.remove('modal--open')
-    }
+  buttonsConsult.forEach((buttonConsult) => {
+    buttonConsult.addEventListener('click', () => {
+      modalConsult.classList.add('modal--open')
+      request.value = buttonConsult.dataset.order;
+    })
   })
+
+  modals.forEach((modal) => {
+    modal.addEventListener('click', (event) => {
+      const target = event.target;
+
+      if(target.closest('.modal__close')
+        || target === modal || event.code === 'Escape' ||
+            event.type === 'submit') {
+        modal.classList.remove('modal--open')
+      }
+    })
+  })
+
+  // modal.addEventListener('click', (event) => {
+  //   const target = event.target;
+
+  //   if(target.closest('.modal__close')
+  //     || target === modal || event.code === 'Escape' ||
+  //         event.type === 'submit') {
+  //     modal.classList.remove('modal--open')
+  //   }
+  // })
 
   form.addEventListener('submit', formSend);
 }
