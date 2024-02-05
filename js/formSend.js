@@ -5,6 +5,7 @@ import { showErrorMessage, showSuccessMessage } from "./util.js";
 export const formSend = async (evt) => {
     evt.preventDefault();
 
+    let form = evt.target;
     const formData = new FormData(form);
 
     if (form.checkValidity()) {
