@@ -1,14 +1,18 @@
 .form-section {
   padding: 40px 0;
-  height: 550px;
+  // height: 550px;
 
   @media (max-width: $laptop) {
     padding: 30px 0;
-    height: 520px;
+    // height: 520px;
   }
 
   @media (max-width: $tablet) {
-    height: 840px;
+    // height: 840px;
+  }
+
+  @media (max-width: $mobile) {
+    // height: 710px;
   }
 
   &__container {
@@ -39,7 +43,7 @@
     align-items: center;
 
     @media (max-width: $desktop) {
-      max-width: 560px;
+      // max-width: 560px;
     }
 
     @media (max-width: $mobile) {
@@ -72,6 +76,10 @@
 
     @media (max-width: $laptop) {
       font-size: 18px;
+    }
+
+    @media (max-width: $laptop) {
+      font-size: 16px;
     }
   }
 }

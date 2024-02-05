@@ -7,22 +7,22 @@
 
   @media (max-width: $desktop) {
     padding: 70px 0 50px;
-    height: 850px;
+    height: 915px;
     background-image: url("../img/news_bg-desktop.jpg");
   }
 
   @media (max-width: $laptop) {
     background-image: url("../img/news_bg-laptop.jpg");
-    height: 900px;
+    height: 720px;
   }
 
   @media (max-width: $tablet) {
-    height: 930px;
+    height: 760px;
     background-image: url("../img/news_bg-tablet.jpg");
   }
 
   @media (max-width: $mobile) {
-    height: 900px;
+    height: 690px;
     background-image: url("../img/news_bg-mobile.jpg");
   }
 
@@ -37,6 +37,17 @@
 
     @media (max-width: $desktop) {
       font-size: 22px;
+      padding-bottom: 50px;
+    }
+
+    @media (max-width: $laptop) {
+      font-size: 20px;
+      padding-bottom: 40px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 18px;
+      padding-bottom: 35px;
     }
   }
 }

@@ -22,22 +22,34 @@
   }
 
   @media (max-width: $mobile) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   &__address {
     padding-bottom: 25px;
+
+    @media (max-width: $mobile) {
+      padding-bottom: 15px;
+    }
   }
 
   &__phone {
     display: flex;
     flex-direction: column;
     padding-bottom: 25px;
+
+    @media (max-width: $mobile) {
+      padding-bottom: 15px;
+    }
   }
 
   &__mail {
     display: block;
     padding-bottom: 25px;
+
+    @media (max-width: $mobile) {
+      padding-bottom: 15px;
+    }
   }
 
   &__time {
@@ -68,7 +80,7 @@
   }
 
   @media (max-width: $mobile) {
-    font-size: 22px;
+    font-size: 20px;
     padding-bottom: 30px;
   }
 }

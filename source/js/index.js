@@ -5,19 +5,9 @@ import { toggleMenu } from "./toggleMenu.js";
 import { modals, form1, form2, form3, request, buttonsRequest, buttonsConsult, modalConsult, modalRequest } from "./elements.js";
 import { formSend } from "./formSend.js";
 import { shereAnimate } from "./shereAnimate.js";
+import { maskPhone } from "./maskPhone.js";
 
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
-
-
-
-
-
-
-const phoneInput = document.querySelector(".form__input--phone");
-    const maskOptions = {
-      mask: '+{7}(000)000-00-00'
-    };
-    const mask = IMask(phoneInput, maskOptions);
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
 
 
 const swiper = new Swiper('.swiper', {
@@ -60,13 +50,15 @@ const init = () => {
   buttonsRequest.forEach((buttonRequest) => {
     buttonRequest.addEventListener('click', () => {
       modalRequest.classList.add('modal--open')
+      maskPhone();
       request.value = buttonRequest.dataset.order;
     })
   })
 
   buttonsConsult.forEach((buttonConsult) => {
     buttonConsult.addEventListener('click', () => {
-      modalConsult.classList.add('modal--open')
+      modalConsult.classList.add('modal--open');
+      maskPhone();
       request.value = buttonConsult.dataset.order;
     })
   })
@@ -99,5 +91,4 @@ const init = () => {
 }
 
 
-// toggleMenu()
 init();

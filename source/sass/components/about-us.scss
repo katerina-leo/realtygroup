@@ -1,7 +1,13 @@
 .about-us {
   padding: 70px 0 100px;
-  background: url("../img/bg_svg.svg") no-repeat;
-  background-position: right top cover;
+
+
+  &__bg {
+    background: url("../img/bg_svg.svg") no-repeat;
+    background-position: right top;
+    background-size: cover;
+    padding: 0 0 35px;
+  }
 
   &__container {
     // background: url("../img/bg_svg.svg") no-repeat;
@@ -11,7 +17,7 @@
   &__wrap {
     max-width: 1080px;
     text-align: center;
-    margin: 0 auto 35px;
+    margin: 0 auto;
     font-family: $second-font;
     font-weight: 600;
     font-size: 24px;
@@ -20,6 +26,14 @@
       font-size: 22px;
       max-width: 960px;
     }
+
+    @media (max-width: $tablet) {
+      font-size: 18px;
+    }
+  }
+
+  &__button {
+    margin-top: 20px;
   }
 
   &__wrap p {

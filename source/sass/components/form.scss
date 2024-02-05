@@ -35,7 +35,7 @@
     }
 
     @media (max-width: $laptop) {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 
@@ -60,6 +60,7 @@
 
     @media (max-width: $tablet) {
       height: 30px;
+      padding: 14px 15px 8px;
     }
 
     &:focus {
@@ -150,6 +151,7 @@
 
   @media (max-width: $tablet) {
     padding: 10px 20px;
+    font-size: 16px;
   }
 }
 

@@ -13,13 +13,16 @@
 
   @media (max-width: $laptop) {
     font-size: 28px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $tablet) {
     font-size: 24px;
+    margin-bottom: 35px;
   }
 
   @media (max-width: $mobile) {
     font-size: 20px;
+    margin-bottom: 30px;
   }
 }
