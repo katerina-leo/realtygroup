@@ -10,9 +10,11 @@ export const buttonsConsult = document.querySelectorAll('.button--consult');
 export const formRequest = document.querySelector('.form--request');
 export const modalContainer = document.querySelector('.modal__container');
 export const modalSuccess = document.querySelector('.modal__success');
-export const form1 = document.getElementById('form1');
-export const form2 = document.getElementById('form2');
-export const form3 = document.getElementById('form3');
+export const forms = document.querySelectorAll('form');
+
+// export const form1 = document.getElementById('form1');
+// export const form2 = document.getElementById('form2');
+// export const form3 = document.getElementById('form3');
 export const request = modal.querySelector('.modal__order');
 export const burger = document.querySelector('.burger');
 export const navigation = document.querySelector('.main-nav__opened')

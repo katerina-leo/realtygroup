@@ -1,5 +1,9 @@
 export const shereAnimate = () => {
   const sphere = document.getElementById('sphere');
+
+  if(!sphere) {
+    return
+  }
   const rows = []
 
   for(let i = 0; i < 180; i += 9) {
