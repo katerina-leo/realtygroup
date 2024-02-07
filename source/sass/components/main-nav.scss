@@ -80,6 +80,14 @@
       @media (max-width: $laptop) {
         color: $white;
       }
+
+      @media (max-width: $tablet) {
+        font-size: 16px;
+      }
+
+      @media (max-width: $mobile) {
+        font-size: 14px;
+      }
     }
   }
 }

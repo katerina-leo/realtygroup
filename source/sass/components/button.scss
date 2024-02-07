@@ -9,6 +9,11 @@
   text-align: center;
   font-weight: 500;
 
+  &:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    outline: none;
+  }
+
   &--about {
     font-size: 24px;
     padding: 15px 35px;
@@ -17,6 +22,11 @@
   @media (max-width: $desktop) {
     font-size: 18px;
     padding: 10px 15px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 14px;
+    padding: 10px 10px;
   }
 
   &:hover,

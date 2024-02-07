@@ -2,7 +2,7 @@
 
 import { toggleMenu } from "./toggleMenu.js";
 
-import { modals, form1, form2, form3, request, buttonsRequest, buttonsConsult, modalConsult, modalRequest } from "./elements.js";
+import { modals, forms, request, buttonsRequest, buttonsConsult, modalConsult, modalRequest } from "./elements.js";
 import { formSend } from "./formSend.js";
 import { shereAnimate } from "./shereAnimate.js";
 import { maskPhone } from "./maskPhone.js";
@@ -85,9 +85,13 @@ const init = () => {
   //   }
   // })
 
-  form1.addEventListener('submit', formSend);
-  form2.addEventListener('submit', formSend);
-  form3.addEventListener('submit', formSend);
+  forms.forEach((form) => {
+    form.addEventListener('submit', formSend)
+  })
+
+  // form1.addEventListener('submit', formSend);
+  // form2.addEventListener('submit', formSend);
+  // form3.addEventListener('submit', formSend);
 }
 
 
