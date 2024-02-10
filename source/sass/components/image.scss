@@ -23,13 +23,9 @@
 
   @media (max-width: $tablet) {
     background-image: url("../img/image-tablet.jpg");
+    background-attachment: local;
     height: 340px;
   }
-
-  // @media (max-width: $mobile) {
-  //   background-image: url("../img/image-mobile.jpg");
-  //   height: 250px;
-  // }
 }
 
 .image div {
