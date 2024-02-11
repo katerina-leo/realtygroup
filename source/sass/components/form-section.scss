@@ -42,10 +42,6 @@
     display: flex;
     align-items: center;
 
-    @media (max-width: $desktop) {
-      // max-width: 560px;
-    }
-
     @media (max-width: $mobile) {
       order: -1;
     }

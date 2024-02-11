@@ -1,7 +1,6 @@
 .main-nav {
   display: grid;
   align-items: center;
-  // grid-template-columns: auto auto;
   gap: 20px;
 
   @media (max-width: $laptop) {
