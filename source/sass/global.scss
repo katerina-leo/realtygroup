@@ -1,7 +1,6 @@
 html {
   --container: 300px;
   --padding-container: 10px;
-  overflow-x: hidden;
   position: relative;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -20,7 +19,6 @@ body {
   font-size: 18px;
   line-height: normal;
   color: $font-color;
-  overflow-x: hidden;
   position: relative;
   margin: 0;
 }

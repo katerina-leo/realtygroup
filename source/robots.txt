@@ -1,0 +1,6 @@
+User-agent: *
+Clean-param: etext
+
+
+Host: https://rieltgroup21.ru
+
