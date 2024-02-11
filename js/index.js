@@ -78,23 +78,12 @@ const init = () => {
     })
   })
 
-  // modal.addEventListener('click', (event) => {
-  //   const target = event.target;
-
-  //   if(target.closest('.modal__close')
-  //     || target === modal || event.code === 'Escape' ||
-  //         event.type === 'submit') {
-  //     modal.classList.remove('modal--open')
-  //   }
-  // })
 
   forms.forEach((form) => {
     form.addEventListener('submit', formSend)
   })
 
-  // form1.addEventListener('submit', formSend);
-  // form2.addEventListener('submit', formSend);
-  // form3.addEventListener('submit', formSend);
+
 }
 
 
